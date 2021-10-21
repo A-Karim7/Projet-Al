@@ -11,16 +11,16 @@
         <a href="page0.php?art=<?php echo $aff3;?>">
         <div id="ens">
         <div id="image">
-        <img id="id" src="<?php echo $aff4?>">
+        <img id="id" src="<?php echo "../Views/css/images/".$aff4?>">
         </div>
         <div id="titre">
         <p><?php echo $aff2?></p>
         </div>
         </div>
         </a>
-        <p id="creation">(<?php echo $aff1; ?>)</p>
-              <input type="submit" name="submit" value="Precedent" class="gauche" id="<?php if($ka==1) echo "caché";?>" style="background: transparent; border-radius: 10px; border: 2px solid #0066CC;" onclick="plusDivs(-1)"></a>
-              <input type="submit" name="submit" value="Suivant" class="droite" id="<?php  if($ka==$nb) echo "caché";?>" style="background: transparent; border-radius: 10px; border: 2px solid #0066CC;" onclick="plusDivs(+1)"></a>
+        <p id="creation" style="position:relative; top:-5px;">Publié le (<?php echo $aff1; ?>)</p>
+              <img name="submit" src="../Views/css/images/previous" class="gauche" id="<?php if($ka==1) echo "caché";?>" style="background: transparent; border-radius: 10px; border: 0px solid #0066CC;" onclick="plusDivs(-1)"></a>
+              <img name="submit" src="../Views/css/images/next" class="droite" id="<?php  if($ka==$nb) echo "caché";?>" style="background: transparent; border-radius: 10px; border: 0px solid #0066CC;" onclick="plusDivs(+1)"></a>
         </div>
       <?php
       $ka++;

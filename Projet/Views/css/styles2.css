@@ -1,0 +1,26 @@
+#tet{
+	z-index: 3;
+	margin: 40px;
+	float: right;
+	position: absolute;
+	top: 212px;
+	margin-left: 840px;
+}
+#tetuu{
+	background: #F5F5F5;
+	border-radius: 7px;
+	padding-left: 15px;
+	text-align: left;
+	height: 30px;
+	width: 175px;
+	font-size: 1.3em;
+}
+#ute{
+	background: #F5F5F5;
+	border-radius: 7px;
+	height: auto;
+	width: 190px;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 1.2em;
+}

@@ -15,8 +15,8 @@ if (isset($_SESSION['prenom'])) {
   </head>
   <body>
     <?php       require('../Views/header.php'); ?>
-    <h2 class="col-8 offset-md-2">Liste Articles</h2>
-  <table class="table my_table" cellpadding="10" cellspacing="2">
+		<h1 style="position:relative; top:80px; margin-left:450px;">Liste articles</h1>
+  <table class="table" cellpadding="10" cellspacing="2" style="margin-left:300px;">
       <tr>
         <th>Titre</th>
         <th>Categorie</th>

@@ -15,12 +15,10 @@ if (isset($_SESSION['prenom'])) {
   </head>
   <body>
     <?php      require('../Views/header.php'); ?>
-    <h2 class="col-8 offset-md-2">Liste des categories d'articles</h2>
-  <table class="table my_table" cellpadding="10" cellspacing="2">
+    <h2 class="coloff">Liste des categories d'articles</h2>
+  <table class="table" cellpadding="10" cellspacing="2">
       <tr>
-        <th>Categorie</th>
-        <th></th>
-        <th></th>
+        <th colspan="3">Categories</th>
       </tr>
         <?php    require_once('../Controller/control4.php'); ?>
 

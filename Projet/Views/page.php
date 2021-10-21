@@ -14,15 +14,18 @@ if (isset($_SESSION['prenom'])) {
 		      display: none;
 		    }
 		    </style>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
   <body>
-    <?php       require('../Views/header.php'); ?>
-	    <h4>Bonjour M.<?php echo $_SESSION['prenom']; ?></h4>
+    <?php
+       require('../Views/header.php'); ?>
+	 			<div class="tout">
+  <h4 style="position:relative; top:140px; margin-left:40px;">Bonjour M.<?php echo $_SESSION['prenom']; ?></h4>
 		<?php
-		  require_once('../Views/categorie.php');
+			  require_once('../Views/categorie.php');
 		  require_once('../Controller/control.php');
 		  ?>
+		</div>      <h3 style="position: relative; top: -745px; margin-left:230px; color:#696969;">Master GLSI	 News</h3>
   </body>
 </html>

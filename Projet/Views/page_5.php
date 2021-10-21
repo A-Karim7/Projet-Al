@@ -20,7 +20,7 @@ if (isset($_SESSION['prenom']) && isset($_SESSION['type'])) {
   <body>
     <?php     require('../Views/header.php'); ?>
     <h2 class="col-8 offset-md-2">Liste des Utilisateurs</h2>
-    <table class="table my_table" cellpadding="10" cellspacing="2">
+    <table id="table" style="position:relative; top:100px; margin-left:200px;">
       <tr>
         <th>Login</th>
         <th>Prenoms</th>
@@ -29,10 +29,25 @@ if (isset($_SESSION['prenom']) && isset($_SESSION['type'])) {
         <th>Type Compte</th>
         <th>Mots de Passe</th>
       </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
         <?php    require_once('../Controller/control1.php'); ?>
-  <div class="">
-        <button  onclick="Hreff();" style="background-color: transparent;background-repeat: no-repeat;border: none;cursor: pointer;overflow: hidden;outline: none;"> <i class="fa fa-plus-square fa_custom fa-2x"> Ajouter</i></button>
-  </div>
+      </tr><tr>
+        <th colspan="4"><button  onclick="Hreff();" style="background-color: transparent;background-repeat: no-repeat;border: none;cursor: pointer;overflow: hidden;outline: none;"> <i class="fa fa-plus-square fa_custom fa-2x"> Ajouter</i></button></th>
+      </tr>
     </table>
   </body><script src="../Controller/script1.js"></script>
 </html>
